@@ -74,32 +74,43 @@
 // });
 
 // Login demo project
-document.querySelector(".btn").addEventListener("click", function () {
-  let pass1 = document.querySelector(".pass1").value;
-  let pass2 = document.querySelector(".pass2").value;
+// document.querySelector(".btn").addEventListener("click", function () {
+//   let pass1 = document.querySelector(".pass1").value;
+//   let pass2 = document.querySelector(".pass2").value;
 
-  if (pass1 !== "" && pass2 !== "") {
-    if (pass1 === pass2) {
-      console.log("Success");
-    } else {
-      console.log("dont match this password");
-    }
-  } else {
-    console.log("type your legal password");
-  }
+//   if (pass1 !== "" && pass2 !== "") {
+//     if (pass1 === pass2) {
+//       console.log("Success");
+//     } else {
+//       console.log("dont match this password");
+//     }
+//   } else {
+//     console.log("type your legal password");
+//   }
+// });
+
+// $(".btn2").on("click", function () {
+//   let pass1 = $(".pass3").val();
+//   let pass2 = $(".pass4").val();
+
+//   if (pass1 !== "" && pass2 !== "") {
+//     if (pass1 === pass2) {
+//       console.log("Success");
+//     } else {
+//       console.log("dont match this password");
+//     }
+//   } else {
+//     console.log("type your legal password");
+//   }
+// });
+
+// jQuery Animation (part-1)
+$(".btn").click(function () {
+  $(".content").fadeOut(1000);
 });
 
-$(".btn2").on("click", function () {
-  let pass1 = $(".pass3").val();
-  let pass2 = $(".pass4").val();
-
-  if (pass1 !== "" && pass2 !== "") {
-    if (pass1 === pass2) {
-      console.log("Success");
-    } else {
-      console.log("dont match this password");
-    }
-  } else {
-    console.log("type your legal password");
-  }
+$(".btn1").click(function () {
+  /*jodi right a nite chai tahole right-0 korte hobe css file a */
+  /*jodi left a nite chai tahole left-0 korte hobe css file a*/
+  $(".content1").animate({ right: "-=100%" }, 1000);
 });
