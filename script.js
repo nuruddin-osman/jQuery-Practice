@@ -38,32 +38,68 @@
 // $("p").removeClass("para1");
 
 // Event Listener
-document.querySelector(".button1").addEventListener("click", function () {
-  document.querySelector(".heading1").innerHTML = "Ami paichi";
-});
-document.querySelector(".button1").addEventListener("click", function () {
-  document.querySelector(".heading1").classList.toggle("para");
+// document.querySelector(".button1").addEventListener("click", function () {
+//   document.querySelector(".heading1").innerHTML = "Ami paichi";
+// });
+// document.querySelector(".button1").addEventListener("click", function () {
+//   document.querySelector(".heading1").classList.toggle("para");
+// });
+
+// $(".button2").click(function () {
+//   $(".heading2").text("Paichi re paichi");
+// });
+
+// $(".button3").click(function () {
+//   $(".heading3").toggleClass("para");
+// });
+
+// let allBtn = document.querySelectorAll(".button5").length;
+// for (let index = 0; index < allBtn; index++) {
+//   document
+//     .querySelectorAll(".button5")
+//     [index].addEventListener("click", function () {
+//       let sum = this.innerHTML;
+//       document.querySelector(".heading5").innerHTML = sum + " " + "is Clicked";
+//     });
+// }
+
+// $(".button6").click(function () {
+//   let sum = this.innerHTML;
+//   $(".heading6").text(sum + " " + "is Clicked");
+// });
+
+// $(".button6").on('click', function () {
+//   let sum = this.innerHTML;
+//   $(".heading6").text(sum + " " + "is Clicked");
+// });
+
+// Login demo project
+document.querySelector(".btn").addEventListener("click", function () {
+  let pass1 = document.querySelector(".pass1").value;
+  let pass2 = document.querySelector(".pass2").value;
+
+  if (pass1 !== "" && pass2 !== "") {
+    if (pass1 === pass2) {
+      console.log("Success");
+    } else {
+      console.log("dont match this password");
+    }
+  } else {
+    console.log("type your legal password");
+  }
 });
 
-$(".button2").click(function () {
-  $(".heading2").text("Paichi re paichi");
-});
+$(".btn2").on("click", function () {
+  let pass1 = $(".pass3").val();
+  let pass2 = $(".pass4").val();
 
-$(".button3").click(function () {
-  $(".heading3").toggleClass("para");
-});
-
-let allBtn = document.querySelectorAll(".button5").length;
-for (let index = 0; index < allBtn; index++) {
-  document
-    .querySelectorAll(".button5")
-    [index].addEventListener("click", function () {
-      let sum = this.innerHTML;
-      document.querySelector(".heading5").innerHTML = sum + " " + "is Clicked";
-    });
-}
-
-$(".button6").click(function () {
-  let sum = this.innerHTML;
-  $(".heading6").text(sum + " " + "is Clicked");
+  if (pass1 !== "" && pass2 !== "") {
+    if (pass1 === pass2) {
+      console.log("Success");
+    } else {
+      console.log("dont match this password");
+    }
+  } else {
+    console.log("type your legal password");
+  }
 });
