@@ -26,13 +26,44 @@
 
 // CSS Style manipulating
 
-$("p").css("color", "red");
-$("p").css("font-weight", "bold");
-$("p").css("font-size", "4rem");
+// $("p").css("color", "red");
+// $("p").css("font-weight", "bold");
+// $("p").css("font-size", "4rem");
 
-$("p").css({ "font-size": "4rem", "font-weight": "bold", color: "green" });
+// $("p").css({ "font-size": "4rem", "font-weight": "bold", color: "green" });
 
-document.querySelector("p").classList.add("para");
-document.querySelector("p").classList.remove("para1");
-$("p").addClass("para");
-$("p").removeClass("para1");
+// document.querySelector("p").classList.add("para");
+// document.querySelector("p").classList.remove("para1");
+// $("p").addClass("para");
+// $("p").removeClass("para1");
+
+// Event Listener
+document.querySelector(".button1").addEventListener("click", function () {
+  document.querySelector(".heading1").innerHTML = "Ami paichi";
+});
+document.querySelector(".button1").addEventListener("click", function () {
+  document.querySelector(".heading1").classList.toggle("para");
+});
+
+$(".button2").click(function () {
+  $(".heading2").text("Paichi re paichi");
+});
+
+$(".button3").click(function () {
+  $(".heading3").toggleClass("para");
+});
+
+let allBtn = document.querySelectorAll(".button5").length;
+for (let index = 0; index < allBtn; index++) {
+  document
+    .querySelectorAll(".button5")
+    [index].addEventListener("click", function () {
+      let sum = this.innerHTML;
+      document.querySelector(".heading5").innerHTML = sum + " " + "is Clicked";
+    });
+}
+
+$(".button6").click(function () {
+  let sum = this.innerHTML;
+  $(".heading6").text(sum + " " + "is Clicked");
+});
